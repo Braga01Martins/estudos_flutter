@@ -10,7 +10,7 @@
 class Pagamento {
   void Pagar() {
     print("Pagamento realizado com sucesso!");
-    Comprovantes().GerarComprovante();
+    Comprovantes.GerarComprovante();
   }
 }
 
@@ -18,7 +18,7 @@ class Pagamento {
 //PARA QUE CADA CLASSE TENHA APENAS UMA RAZÃO PARA MUDAR, 
 //O QUE FACILITA A MANUTENÇÃO E EVITA ERROS FUTUROS.
 class Comprovantes {
-  void GerarComprovante() {
+  static void GerarComprovante() {
     print("Comprovante gerado com sucesso!");
   }
 }
